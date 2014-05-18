@@ -1,0 +1,309 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+John Hancock
+\end_layout
+
+\begin_layout Standard
+CEN 6405
+\end_layout
+
+\begin_layout Standard
+Homework 2
+\end_layout
+
+\begin_layout Standard
+May 20th, 2014
+\end_layout
+
+\begin_layout Part*
+13.2
+\end_layout
+
+\begin_layout Standard
+Exercise 13.2 requires us to make several calculations using the data given
+ in exercise 12.11.
+ The data is a list of disk I/O's per program: 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+{23, 33, 14, 15, 42, 28, 33, 45, 23 , 34, 39, 21, 36, 23, 24, 36, 25, 9,
+ 11, 19, 35, 24, 31, 29, 16, 23, 34, 24, 38, 15, 13, 35 , 28}
+\end_layout
+
+\begin_layout Section*
+a.
+ 10-percentile and 90-percentile from the sample
+\end_layout
+
+\begin_layout Standard
+We learned in chapter 12 that, "The a-quantiles can be estimated by sorting
+ the observations and taking the 
+\begin_inset Formula $\left[\left(n-1\right)\alpha+1\right]^{th}$
+\end_inset
+
+ element in the ordered set." Therefore in order to compute the 10-percentile
+ and 90 percentile from the sample, we must first sort the sample.
+ Here is the sorted version of the above list of disk I/O's: {9, 11, 13,
+ 14, 15, 15, 16, 19, 21, 23, 23, 23, 23, 24, 24, 24, 25, 28, 28, 29, 31,
+ 33, 33, 34, 34, 35, 35, 36, 36, 38, 39, 42, 45}
+\end_layout
+
+\begin_layout Standard
+The number of elements in the list is 33, so we will use 
+\begin_inset Formula $n=33$
+\end_inset
+
+ in the formula in the paragraph above.
+ We are required to calculate the 10 and 90 percentile from the sample,
+ so we will have two values of 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ for the formula: 
+\begin_inset Formula $0.1$
+\end_inset
+
+ and 
+\begin_inset Formula $0.9$
+\end_inset
+
+ .
+ Substituting these values for 
+\begin_inset Formula $n=33$
+\end_inset
+
+ and 
+\begin_inset Formula $\alpha=0.1$
+\end_inset
+
+ into the formula we get: 
+\begin_inset Formula \[
+\left[\left(33-1\right)0.1+1\right]=\left[3.2+1\right]=\left[4.2\right]=4\]
+
+\end_inset
+
+ Which implies the 10-percentile from the sample is the fourth element in
+ the sorted list, which is 14.
+\end_layout
+
+\begin_layout Standard
+Note: our text uses the notation 
+\begin_inset Formula $\left[.\right]$
+\end_inset
+
+ to denote rounding the value in the square brackets to the nearest integer
+ value.
+ 
+\end_layout
+
+\begin_layout Standard
+Similarly, substuting 
+\begin_inset Formula $n=33$
+\end_inset
+
+ and 
+\begin_inset Formula $\alpha=0.9$
+\end_inset
+
+ into the formula we get:
+\begin_inset Formula \[
+\left[\left(33-1\right)0.9+1\right]=\left[28.8+1\right]=\left[29.8\right]=30\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This implies the thirtieth element of the sorted list is the 90-percentlie
+ from the sample, which is 38.
+\end_layout
+
+\begin_layout Section*
+b.
+ Mean number of disk I/O's per Program
+\end_layout
+
+\begin_layout Standard
+Our text states, 
+\begin_inset Quotes eld
+\end_inset
+
+
+\series bold
+Sample mean
+\series default
+ is obtained by taking the sum of all observations and dividing this sum
+ by the number of observations in the sample.
+\begin_inset Quotes erd
+\end_inset
+
+ The sum of the number of disk I/O's in the list from exercise 12.11 is 878.
+ We have 33 observations in the list so the sample mean is: 
+\begin_inset Formula $\frac{878}{33}\approx26.6$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+c.
+ 90% confidence interval for the mean
+\end_layout
+
+\begin_layout Standard
+Box 13.1, item 1.
+ b.
+ in our text gives a formula for the 
+\begin_inset Formula $100\left(1-\alpha\right)$
+\end_inset
+
+ two sided confidence interval for a sample mean.
+ 
+\begin_inset Formula \[
+\bar{x}\mp z_{1-\frac{\alpha}{2}}\frac{s}{\sqrt{n}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We know to use this formula because we have more than 30 elements in our
+ sample.
+ That is, 
+\begin_inset Formula $n=33$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Section 13.2 explains that 
+\begin_inset Formula $\bar{x}$
+\end_inset
+
+ is the sample mean, 
+\begin_inset Formula $z_{1-\frac{\alpha}{2}}$
+\end_inset
+
+ is the 
+\begin_inset Formula $1-\frac{\alpha}{2}$
+\end_inset
+
+ - quantile of a normal unit variate, and 
+\begin_inset Formula $s$
+\end_inset
+
+ is the sample standard deviation.
+ We computed the sample mean in exercise 13.2 b.
+ above, so we already know 
+\begin_inset Formula $\bar{x}=26.6$
+\end_inset
+
+ .
+ The current excercise requires us to compute a 90% confidence interval,
+ so we know 
+\begin_inset Formula $100\left(1-\alpha\right)=90$
+\end_inset
+
+.
+ We can solve for 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ to determine 
+\begin_inset Formula $a=0.1$
+\end_inset
+
+.
+ Hence, we know we must use the 
+\begin_inset Formula $z_{1-\frac{0.1}{2}}=z_{0.95}$
+\end_inset
+
+ value from appendix A.2 in our text.
+ This value is: 
+\begin_inset Formula $1.645$
+\end_inset
+
+.
+ We used a spreadsheet to calculate the standard deviation of the sample.
+ The result we obtained for 
+\begin_inset Formula $s$
+\end_inset
+
+ is 
+\begin_inset Formula $s=9.4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Substituting all these values in the formula for the confidence interval
+ above we obtain that the confidence interval is the interval:
+\begin_inset Formula \[
+\left(26-1.645\frac{9.4}{\sqrt{33}},26+1.645\frac{9.4}{\sqrt{33}}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\approx\left(\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

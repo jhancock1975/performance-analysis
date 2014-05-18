@@ -1,0 +1,7 @@
+# 12.2 plot of probability mass function
+set xrange[1:100]
+set key box inside b/r
+plot (0.98**(x-1))*0.2 title 'pmf' with points
+# 12.2 plot cumulative density function
+plot '12.2-cdf-plot.txt' using 1:2 title 'CDF'
+
