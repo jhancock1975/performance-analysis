@@ -1,0 +1,140 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+John Hancock
+\end_layout
+
+\begin_layout Standard
+CEN 6405
+\end_layout
+
+\begin_layout Standard
+Homework 3
+\end_layout
+
+\begin_layout Standard
+May 20th, 2014
+\end_layout
+
+\begin_layout Part*
+14.2
+\end_layout
+
+\begin_layout Standard
+In order to do exercise 14.2 it will be necessary to find a linear model
+ where the predictor is CPU times and the response is disk I/O's.
+ We can use the technique shown in example 14.1, treating the CPU times as
+ the 
+\begin_inset Formula $x$
+\end_inset
+
+ values and disk I/O's as 
+\begin_inset Formula $y$
+\end_inset
+
+ values.
+ The data points are the set 
+\begin_inset Formula \[
+\left\{ \left(2,14\right),\left(5,16\right),\left(7,27\right),\left(9,42\right),\left(10,39\right),\left(13,50\right),\left(20,83\right)\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n=7$
+\end_inset
+
+, 
+\begin_inset Formula $\sum xy=3375$
+\end_inset
+
+, 
+\begin_inset Formula $\sum x=66$
+\end_inset
+
+, 
+\begin_inset Formula $\sum x^{2}=828$
+\end_inset
+
+, 
+\begin_inset Formula $\sum y=271$
+\end_inset
+
+, 
+\begin_inset Formula $\sum y^{2}=13855$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{x}=9.43$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{y}=38.71$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The formula for the slope, 
+\begin_inset Formula $b_{1}$
+\end_inset
+
+ of the linear model is 
+\begin_inset Formula \[
+b1=\frac{\sum xy-n\bar{x}\bar{y}}{\sum x^{2}-n\left(\bar{x}\right)^{2}}=\frac{3375-7\left(9.43\right)\left(38.71\right)}{}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+14.4
+\end_layout
+
+\end_body
+\end_document
