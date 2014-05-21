@@ -17,14 +17,19 @@
 
 \graphics default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_amsmath 1
 \use_esint 1
 \cite_engine basic
 \use_bibtopic false
 \paperorientation portrait
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -50,14 +55,14 @@ CEN 6405
 \end_layout
 
 \begin_layout Standard
-Homework 3
-\end_layout
-
-\begin_layout Standard
 May 20th, 2014
 \end_layout
 
 \begin_layout Part*
+Homework 3
+\end_layout
+
+\begin_layout Section*
 14.2
 \end_layout
 
@@ -123,17 +128,1729 @@ The formula for the slope,
 \begin_inset Formula $b_{1}$
 \end_inset
 
- of the linear model is 
+, of the linear model is: 
 \begin_inset Formula \[
-b1=\frac{\sum xy-n\bar{x}\bar{y}}{\sum x^{2}-n\left(\bar{x}\right)^{2}}=\frac{3375-7\left(9.43\right)\left(38.71\right)}{}\]
+b_{1}=\frac{\sum xy-n\bar{x}\bar{y}}{\sum x^{2}-n\left(\bar{x}\right)^{2}}=\frac{3375-7\left(9.43\right)\left(38.71\right)}{828-7\left(9.43\right)^{2}}=3.9986\]
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Part*
+\begin_layout Standard
+The formula for the intercept, 
+\begin_inset Formula $b_{0}$
+\end_inset
+
+, of the linear model is:
+\begin_inset Formula \[
+b_{0}=\bar{y}-b_{1}\bar{x}=38.71-3.9986\left(9.43\right)=1.003\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The linear model is therefore:
+\end_layout
+
+\begin_layout Standard
+disk I/O's = 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+3.9986
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+(CPU time) + 1.003
+\end_layout
+
+\begin_layout Standard
+The following table summarizes the model:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="5">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CPU Time
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Disk I/O's
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Estimate
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Error
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Error Squared
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\hat{y_{i}}=b_{0}+b_{1}x_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e_{i}=y_{i}-\hat{y_{i}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e_{i}^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.0002 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.9998 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24.9980
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20.996 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-4.996 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24.9600
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+27
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+28.9932 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1.9932 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.9728
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+42
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+36.9904 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5.0096 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25.0961 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+39
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+40.989 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1.989 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.9561
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+52.9848 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-2.9848 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.9090
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+83
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+80.975 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.025 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.1006
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+66
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+271
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+270.9286 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0714 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+95.9927
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Standard deviation of errors 
+\begin_inset Formula $s_{e}=\sqrt{\frac{95.9927}{5}}=4.3816$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+a.
+ Significant Parameters
+\end_layout
+
+\begin_layout Standard
+In order to know which parameters are significant we must compute confidence
+ intervals for 
+\begin_inset Formula $b_{0}$
+\end_inset
+
+ and 
+\begin_inset Formula $b_{1}$
+\end_inset
+
+ and check whether or not they include 0.
+ 
+\end_layout
+
+\begin_layout Standard
+First of all, we must compute the standard deviations of 
+\begin_inset Formula $b_{0}$
+\end_inset
+
+ and 
+\begin_inset Formula $b_{1}$
+\end_inset
+
+, using formulas from example 14.4: 
+\begin_inset Formula \[
+s_{b_{0}}=s_{e}\left[\frac{1}{n}+\frac{\bar{x}^{2}}{\sum x^{2}-n\bar{x}^{2}}\right]^{\frac{1}{2}}\]
+
+\end_inset
+
+ Here, 
+\begin_inset Formula $n=7$
+\end_inset
+
+ , 
+\begin_inset Formula $\bar{x}=9.43$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{x}^{2}=88.9249$
+\end_inset
+
+, 
+\begin_inset Formula $\sum x^{2}=828$
+\end_inset
+
+, 
+\begin_inset Formula $s_{e}=4.3816$
+\end_inset
+
+ so
+\begin_inset Formula \[
+s_{b_{0}}=4.3816\left[\frac{1}{7}+\frac{88.9249}{828-7\left(88.9249\right)}\right]^{\frac{1}{2}}=1.5880\]
+
+\end_inset
+
+
+\begin_inset Formula \[
+s_{b_{1}}=\frac{s_{e}}{\left[\sum x^{2}-n\bar{x}^{2}\right]^{\frac{1}{2}}}=\frac{4.3816}{\left(828-7\left(88.9249\right)\right)^{\frac{1}{2}}}=0.3056\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We have 5 degrees of freedom, and we will compute a 90% confidence interval
+ for our parameters, so we will use 
+\begin_inset Formula $t_{0.95;5}=2.015$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hence the 90% confidence interval for 
+\begin_inset Formula $b_{0}$
+\end_inset
+
+ is
+\begin_inset Formula \[
+b_{0}\mp t_{95;5}s_{b_{o}}=1.003\mp\left(2.015\right)1.5880=\left(-2.19682,4.20282\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And the 90% confidence interval for 
+\begin_inset Formula $b_{1}$
+\end_inset
+
+is 
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\begin_inset Formula \[
+b_{1}\mp t_{0.95;5}s_{b_{1}}=3.9986\mp\left(2.015\right)0.3056=\left(3.3828,4.6143\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 90% confidence interval for 
+\begin_inset Formula $b_{0}$
+\end_inset
+
+includes 0.
+ We cannot reject the hypothesis that 
+\begin_inset Formula $b_{0}$
+\end_inset
+
+ is 0 at the 0.1 significance level.
+ The 90% confidence interval for 
+\begin_inset Formula $b_{1}$
+\end_inset
+
+ does not include 0.
+ 
+\series bold
+Therefore the parameter 
+\begin_inset Formula $b_{0}$
+\end_inset
+
+ is not significant, and the parameter 
+\begin_inset Formula $b_{1}$
+\end_inset
+
+is significant.
+\end_layout
+
+\begin_layout Subsection*
+b.
+ Percentage of variation explained by the regression
+\end_layout
+
+\begin_layout Standard
+We use the calculations done in example 14.2 as a template to complete this
+ section of the exercise:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+SSE=\sum y^{2}-b_{0}\sum y-b_{1}\sum xy=13855-1.003\left(271\right)-3.9986\left(3375\right)=87.912\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+SST=SSY-SSO=\sum y^{2}-n\left(\bar{y}\right)^{2}=13855-7\left(38.71\right)^{2}=3365.7513\]
+
+\end_inset
+
+
+\begin_inset Formula \[
+SSR=SST-SSE=3365.7513-87.912=3277.8393\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+R^{2}=\frac{SSR}{SST}=\frac{3277.8393}{3365.7513}=0.9739\]
+
+\end_inset
+
+ Therefore our regression explains 97% of disk I/O's variation.
+\end_layout
+
+\begin_layout Subsection*
+c.
+ Expected number of disk I/O's
+\end_layout
+
+\begin_layout Standard
+Section c requires us to calculate the expected number of disk I/O's for
+ a program with a CPU time of 40 milliseconds.
+ We use the linear model to find this number:
+\begin_inset Formula \[
+diskI/O's=3.9986(CPUtime)+1.003\]
+
+\end_inset
+
+
+\begin_inset Formula \[
+diskI/O's=3.9986(40)+1.003\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+diskI/O's=160.947\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+d.
+ Bounds on c.
+ for 10% chance of error on single program measured tomorrow
+\end_layout
+
+\begin_layout Standard
+In order to do part d of this exercise, we follow the example 14.5 of our
+ text to compute a 90% confidence interval for a single predicted value.
+ 
+\end_layout
+
+\begin_layout Standard
+First we must compute the standard deviation of a single future observation
+\begin_inset Formula \[
+s_{\hat{y}_{p}}=s_{e}\left[1+\frac{1}{n}+\frac{\left(x_{p}-\bar{x}\right)^{2}}{\sum x^{2}-n\bar{x}^{2}}\right]^{\frac{1}{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+=4.3816\left[1+\frac{1}{7}+\frac{\left(40-9.43\right)^{2}}{828-\left(7\right)9.43^{2}}\right]^{\frac{1}{2}}=10.4516\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We will again use the 
+\begin_inset Formula $t$
+\end_inset
+
+ value for the 0.95 quantile with 5 degrees of freedom to calculate the 90%
+ confidence interval for the bounds on the predicted value from section
+ c.
+ of this exercise:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+160.947\mp2.015\left(10.4516\right)=\left(139.8870,182.0070\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Because we computed the 90% confidence interval, we claim there is a 10%
+ chance that the value we observe tomorrow will be outside this interval.
+\end_layout
+
+\begin_layout Subsection*
+e.
+ Repeat of d.
+ for large number of programs
+\end_layout
+
+\begin_layout Standard
+We make calculations similar to those we make in section d.
+ of this exercise, but we use the formula for the standard deviation of
+ a large number of observations instead:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+s_{\hat{y}_{p}}=s_{e}\left[\frac{1}{n}+\frac{\left(x_{p}-\bar{x}\right)^{2}}{\sum x^{2}-n\bar{x}^{2}}\right]^{\frac{1}{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+=4.3816\left[\frac{1}{7}+\frac{\left(40-9.43\right)^{2}}{828-\left(7\right)9.43^{2}}\right]^{\frac{1}{2}}=9.4888\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We use the same 
+\begin_inset Formula $t-$
+\end_inset
+
+variate as in section d.
+ to compute the interval:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+160.947\mp2.015\left(9.4888\right)=\left(141.8271,180.0669\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
 14.4
+\end_layout
+
+\begin_layout Standard
+We are required to prepare a simple regression model for the following data.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="2">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features>
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+of days (
+\begin_inset Formula $x_{i})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features>
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Elapsed
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Time (
+\begin_inset Formula $y_{i}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.65
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.79
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.36
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.26
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.59
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5.39
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here is a scatter plot of the data.
+ It suggests a linear relationship between elapsed time and the number of
+ days:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 14.4-scatter.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From this data, we can gather the terms necessary to estimate the parameters
+ for the regression model:
+\begin_inset Formula $\sum xy=217.94$
+\end_inset
+
+, 
+\begin_inset Formula $n=6$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{x}=9.33$
+\end_inset
+
+ , 
+\begin_inset Formula $\bar{y}=2.34$
+\end_inset
+
+, 
+\begin_inset Formula $\sum x^{2}=966$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+b_{1}=\frac{\sum xy-n\bar{x}\bar{y}}{\sum x^{2}-n\left(\bar{x}\right)^{2}}=\frac{217.94-6\left(9.33\right)2.34}{966-6\left(9.33\right)^{2}}=0.1960\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+b_{0}=\bar{y}-b_{1}\bar{x}=2.34-0.1960\left(9.33\right)=0.5113\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Our regression model is therefore:
+\begin_inset Formula \[
+y=0.5113+0.1960x\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where y is the elapsed time for database operation, and x is the number
+ of days.
+\end_layout
+
+\begin_layout Standard
+Now, we can compute confidence intervals for the parameters, but in order
+ to do that we need to compute the standard deviation of the errors first.
+ We can do that with the aid of the table below:
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="5">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\hat{y_{i}}=b_{0}+b_{1}x_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e_{i}=y_{i}-\hat{y_{i}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e_{i}^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.65
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.7073
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.057
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0033
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.79
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9032
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.1132
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0128
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.36
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.2951 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0648
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0042
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.26
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.0790
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.1810
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0327
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.59
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.6466
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.05661
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0032
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5.39
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5.4102
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.0202
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0004
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The standard deviation of the errors 
+\begin_inset Formula $s_{e}$
+\end_inset
+
+is 
+\begin_inset Formula $\sqrt{\frac{\sum e_{i}^{2}}{4}}=0.1191$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The standard deviations for the parameters are:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+s_{b_{0}}=s_{e}\left[\frac{1}{n}+\frac{\bar{x}^{2}}{\sum x^{2}-n\bar{x}^{2}}\right]^{\frac{1}{2}}=0.1191\left[\frac{1}{6}+\frac{2.34^{2}}{966-6(2.34)^{2}}\right]^{\frac{1}{2}}=0.0495\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\begin_inset Formula \[
+s_{b_{1}}=\frac{s_{e}}{\left[\sum x^{2}-n\bar{x}^{2}\right]^{\frac{1}{2}}}=\frac{0.1191}{\left[966-6\left(2.34\right)^{2}\right]^{\frac{1}{2}}}=0.0039\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We use the 
+\begin_inset Formula $t$
+\end_inset
+
+-value from appendix A.4 in our text for the 95-quantile and 4 degrees of
+ freedom 
+\begin_inset Formula $t_{0.95;4}=2.132$
+\end_inset
+
+ to compute the 90% confidence intervals for the regression parameters :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $b_{0}\mp t_{0.95;4}s_{b_{0}}=0.5113\mp2.132\times0.0495=\left(0.4058,0.6168\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $b_{1}\mp t_{0.95;4}s_{b_{1}}=0.1960\mp2.132\times0.0039=\left(0.1877,0.2043\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Both intervals do not include 0, so at a 0.1 significance level, we can reject
+ the hypotheses that the regression parameters are 0.
+\end_layout
+
+\begin_layout Standard
+In order to complete the analysis of the linear model, we will compute the
+ coefficient of determination, which serves as a measure of the quality
+ of a regression.
+ As stated in section 14.3 of our text, 
+\begin_inset Quotes eld
+\end_inset
+
+The goodness of a regression is measured by 
+\begin_inset Formula $R^{2}$
+\end_inset
+
+.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The factors we need from our data in order to compute 
+\begin_inset Formula $R^{2}$
+\end_inset
+
+ are: 
+\begin_inset Formula $\sum y^{2}=49.94$
+\end_inset
+
+, 
+\begin_inset Formula $\sum y=14.04$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{y}=2.34$
+\end_inset
+
+, 
+\begin_inset Formula $\sum xy=217.94$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+SSE=\sum y^{2}-b_{0}\sum y-b_{1}\sum xy=49.44-0.5113\left(14.0400\right)-0.1960\left(217.94\right)=0.0491\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+SST=SSY-SSO=\sum y^{2}-n\left(\bar{y}\right)^{2}=49.44-6\left(2.34\right)=35.4\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+SSR=SST-SSE=35.4-0.0491=35.3509\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+R^{2}=\frac{SSR}{SST}=\frac{35.3509}{35.4}=0.9986\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Therefore, the regression explains 99.86% of the results.
 \end_layout
 
 \end_body
