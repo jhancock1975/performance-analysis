@@ -56,5 +56,43 @@ Homework 4
 May 22nd, 2014
 \end_layout
 
+\begin_layout Part*
+Homework 4
+\end_layout
+
+\begin_layout Section*
+15.1
+\end_layout
+
+\begin_layout Subsection*
+a.
+ Percentage of variance explained by the regression
+\end_layout
+
+\begin_layout Standard
+In table 15.11 we are given that the coefficient of multiple correlation
+ equals 0.95.
+ Our text explains that the coefficient of multiple correlation is the square
+ root of the coeffiicient of determination.
+ Therefore the coefficient of determination = 
+\begin_inset Formula $0.95^{2}=0.9025$
+\end_inset
+
+.
+ The percent of variance explained by the regression is 100 times the coefficien
+t of variation.
+ In this case the percentage of variation explained by the regression is
+ 90.25%.
+\end_layout
+
+\begin_layout Subsection*
+b.
+ Significance of Regression at 90% Confidence Level
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document
