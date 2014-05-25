@@ -1,0 +1,249 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+John Hancock
+\end_layout
+
+\begin_layout Standard
+CEN 6405
+\end_layout
+
+\begin_layout Standard
+Homework 6
+\end_layout
+
+\begin_layout Standard
+May 27th, 2014
+\end_layout
+
+\begin_layout Part*
+Homework #7
+\end_layout
+
+\begin_layout Section*
+21.3
+\end_layout
+
+\begin_layout Standard
+We use a multiplicative for the analysis.
+ model.
+ In section 21.7 the author of our text writes, 
+\begin_inset Quotes eld
+\end_inset
+
+It was argued in Section 18.8 that in many cases such as those involving
+ processors and workloads [this is the case in this exercise], the effects
+ are multiplcative rather than additive.
+ In such cases, the log of the response follows an additive model.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the following table we compute row and column effects for the logarithms
+ of the code sizes given in table 21.23:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+tiny 
+\backslash
+begin{tabular}{ *{9}{c|r|l|} }  
+\end_layout
+
+\begin_layout Plain Layout
+
+& RISC-1 & Z8002 & VAX11/780 & PDP11/70 & C/70 & row sum & row mean & row
+ effect
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+E-String Search & 2.1461280357 & 2.1003705451 & 1.9912260757 & 2.0492180227
+ & 1.9912260757 & 10.2781687549 & 2.055633751 & 2.055633751
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+F-Bit Test & 2.079181246 & 2.2552725051 & 2.1583624921 & 2.2253092817 & 2.079181246
+ & 10.797306771 & 2.1594613542 & -0.5043115787
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+K-Bit Matrix & 2.4593924878 & 2.5728716022 & 2.4593924878 & 2.5728716022 & 2.50105926
+22 & 12.5655874421 & 2.5131174884 & 2.5131174884
+\backslash
+
+\backslash
+ I-Quick Sort & 2.9965116722 & 3.0378247506 & 2.9508514589 & 3.0378247506 &
+ 2.9508514589 & 14.9738640911 & 2.9947728182 & 2.9947728182
+\backslash
+
+\backslash
+ Ackermann(3,6) & 2.1583624921 & 2.480006943 & 1.8573324964 & 1.9344984512 &
+ 1.9344984512 & 10.364698834 & 2.0729397668 & 2.0729397668
+\backslash
+
+\backslash
+ Recursive Qsort & 3.437116093 & 3.1360860974 & 3.1360860974 & 3.2153731528
+ & 3.2153731528 & 16.1400345934 & 3.2280069187 & 3.2280069187
+\backslash
+
+\backslash
+ Puzzle (Subscript) & 3.4465371671 & 3.1455071714 & 3.1455071714 & 3.1455071714
+ & 3.2247919565 & 16.1078506378 & 3.2215701276 & 3.2215701276
+\backslash
+
+\backslash
+ Puzzle (Pointer) & 2.8762178406 & 2.7795964913 & 2.6541765419 & 2.5751878449
+ & 2.5751878449 & 13.4603665636 & 2.6920733127 & 2.6920733127
+\backslash
+
+\backslash
+ SED (Batch Editor) & 4.2484637176 & 4.2484637176 & 4.0266149679 & 3.9474337219
+ & 3.9474337219 & 20.4184098468 & 4.0836819694 & 4.0836819694
+\backslash
+
+\backslash
+ Towers of Hanoi (18) & 1.982271233 & 2.3802112417 & 1.8864907252 & 1.982271233
+ & 1.8260748027 & 10.0573192357 & 2.0114638471 & 2.0114638471
+\backslash
+
+\backslash
+  &  &  &  &  &  &  &  
+\backslash
+
+\backslash
+ column sum & 30.0756946529 & 30.2854301779 & 28.5903229699 & 29.1611664208
+ & 28.3948970855 & overall mean & 2.6637729329 
+\backslash
+
+\backslash
+ column mean & 2.7341540594 & 2.7532209253 & 2.59912027 & 2.6510151292 & 2.5813542805
+ &  &  
+\backslash
+
+\backslash
+ column effect & 2.7341540594 & 2.7532209253 & 2.59912027 & 2.6510151292 & 2.58135428
+05 &  &  
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So, we will analyze a model based on the logs of the responses in table
+ 21.32, ignoring the column for the 68000 processor.
+\end_layout
+
+\begin_layout Standard
+At the end of excercise 13.3, there is a note that states, 
+\begin_inset Quotes eld
+\end_inset
+
+Since the code sizes vary over several orders of magnitude, the arithmetic
+ mean and its confidence interval are not very useful.
+ Do not make any conclusions from the results of this exercise.
+ This data is reconsidered in Chapter 21.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The data mentioned is that the data in table 11.2, which is the same data
+ we are asked to consider in exercise 21.3 in table 21.23, because we the
+ exercise requires us to ignore the code sizes for the 68000 processor.
+ Therefore the note applies, and we should not use an additive model to
+ analyze this data, because that would require us to use aritmetic means
+ of code sizes.
+\end_layout
+
+\end_body
+\end_document
