@@ -98,105 +98,100 @@ status open
 
 \begin_layout Plain Layout
 
-{
+
 \backslash
-tiny 
-\backslash
-begin{tabular}{ *{9}{c|r|l|} }  
+begin{tabular}{ *{9} {l|c|r|}}  
 \end_layout
 
 \begin_layout Plain Layout
 
-& RISC-1 & Z8002 & VAX11/780 & PDP11/70 & C/70 & row sum & row mean & row
- effect
-\backslash
 
 \backslash
-
+hline
 \end_layout
 
 \begin_layout Plain Layout
 
-E-String Search & 2.1461280357 & 2.1003705451 & 1.9912260757 & 2.0492180227
- & 1.9912260757 & 10.2781687549 & 2.055633751 & 2.055633751
+ & RISC-1 & Z8002 & VAX11/780 & PDP11/70 & C/70 & row sum & row mean & row
+ effect 
 \backslash
 
 \backslash
+  
+\backslash
+hline E-String Search & 2.15 & 2.10 & 1.99 & 2.05 & 1.99 & 10.28 & 2.06 & -0.60
+ 
+\backslash
 
+\backslash
+ F-Bit Test & 2.08 & 2.26 & 2.16 & 2.23 & 2.08 & 10.80 & 2.16 & -0.50 
+\backslash
+
+\backslash
+ H-Linked List & 2.25 & 2.15 & 2.32 & 2.48 & 2.15 & 11.34 & 2.27 & -0.39 
+\backslash
+
+\backslash
+ K-Bit Matrix & 2.46 & 2.57 & 2.46 & 2.57 & 2.50 & 12.57 & 2.51 & -0.15 
+\backslash
+
+\backslash
+ I-Quick Sort & 3.00 & 3.04 & 2.95 & 3.04 & 2.95 & 14.97 & 2.99 & 0.33 
+\backslash
+
+\backslash
+ Ackermann(3,6) & 2.16 & 2.48 & 1.86 & 1.93 & 1.93 & 10.36 & 2.07 & -0.59 
+\backslash
+
+\backslash
+ Recursive Qsort & 3.44 & 3.14 & 3.14 & 3.22 & 3.22 & 16.14 & 3.23 & 0.57 
+\backslash
+
+\backslash
+ Puzzle (Subscript) & 3.45 & 3.15 & 3.15 & 3.15 & 3.22 & 16.11 & 3.22 & 0.56 
+\backslash
+
+\backslash
+ Puzzle (Pointer) & 2.88 & 2.78 & 2.65 & 2.58 & 2.58 & 13.46 & 2.69 & 0.03 
+\backslash
+
+\backslash
+ SED (Batch Editor) & 4.25 & 4.25 & 4.03 & 3.95 & 3.95 & 20.42 & 4.08 & 1.42 
+\backslash
+
+\backslash
+ Towers of Hanoi (18) & 1.98 & 2.38 & 1.89 & 1.98 & 1.83 & 10.06 & 2.01 & -0.65
+ 
+\backslash
+
+\backslash
+  &  &  &  &  &  &  &  & 
+\backslash
+
+\backslash
+ 
+\backslash
+hline column sum & 30.08 & 30.29 & 28.59 & 29.16 & 28.39 & overall mean & 2.66
+ & 
+\backslash
+
+\backslash
+ column mean & 2.73 & 2.75 & 2.60 & 2.65 & 2.58 &  &  & 
+\backslash
+
+\backslash
+ column effect & 0.07 & 0.09 & -0.06 & -0.01 & -0.08 &  &  & 
+\backslash
+
+\backslash
+ 
 \end_layout
 
 \begin_layout Plain Layout
 
-F-Bit Test & 2.079181246 & 2.2552725051 & 2.1583624921 & 2.2253092817 & 2.079181246
- & 10.797306771 & 2.1594613542 & -0.5043115787
-\backslash
 
 \backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-K-Bit Matrix & 2.4593924878 & 2.5728716022 & 2.4593924878 & 2.5728716022 & 2.50105926
-22 & 12.5655874421 & 2.5131174884 & 2.5131174884
-\backslash
-
-\backslash
- I-Quick Sort & 2.9965116722 & 3.0378247506 & 2.9508514589 & 3.0378247506 &
- 2.9508514589 & 14.9738640911 & 2.9947728182 & 2.9947728182
-\backslash
-
-\backslash
- Ackermann(3,6) & 2.1583624921 & 2.480006943 & 1.8573324964 & 1.9344984512 &
- 1.9344984512 & 10.364698834 & 2.0729397668 & 2.0729397668
-\backslash
-
-\backslash
- Recursive Qsort & 3.437116093 & 3.1360860974 & 3.1360860974 & 3.2153731528
- & 3.2153731528 & 16.1400345934 & 3.2280069187 & 3.2280069187
-\backslash
-
-\backslash
- Puzzle (Subscript) & 3.4465371671 & 3.1455071714 & 3.1455071714 & 3.1455071714
- & 3.2247919565 & 16.1078506378 & 3.2215701276 & 3.2215701276
-\backslash
-
-\backslash
- Puzzle (Pointer) & 2.8762178406 & 2.7795964913 & 2.6541765419 & 2.5751878449
- & 2.5751878449 & 13.4603665636 & 2.6920733127 & 2.6920733127
-\backslash
-
-\backslash
- SED (Batch Editor) & 4.2484637176 & 4.2484637176 & 4.0266149679 & 3.9474337219
- & 3.9474337219 & 20.4184098468 & 4.0836819694 & 4.0836819694
-\backslash
-
-\backslash
- Towers of Hanoi (18) & 1.982271233 & 2.3802112417 & 1.8864907252 & 1.982271233
- & 1.8260748027 & 10.0573192357 & 2.0114638471 & 2.0114638471
-\backslash
-
-\backslash
-  &  &  &  &  &  &  &  
-\backslash
-
-\backslash
- column sum & 30.0756946529 & 30.2854301779 & 28.5903229699 & 29.1611664208
- & 28.3948970855 & overall mean & 2.6637729329 
-\backslash
-
-\backslash
- column mean & 2.7341540594 & 2.7532209253 & 2.59912027 & 2.6510151292 & 2.5813542805
- &  &  
-\backslash
-
-\backslash
- column effect & 2.7341540594 & 2.7532209253 & 2.59912027 & 2.6510151292 & 2.58135428
-05 &  &  
-\backslash
-
-\backslash
-
+hline
 \end_layout
 
 \begin_layout Plain Layout
@@ -208,7 +203,13 @@ end{tabular}
 
 \begin_layout Plain Layout
 
-}
+
+\backslash
+newline
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -217,32 +218,968 @@ end{tabular}
 \end_layout
 
 \begin_layout Standard
-So, we will analyze a model based on the logs of the responses in table
- 21.32, ignoring the column for the 68000 processor.
+From this data we can determine the component values we need to substitute
+ into the formulas to do the ANOVA.
 \end_layout
 
 \begin_layout Standard
-At the end of excercise 13.3, there is a note that states, 
-\begin_inset Quotes eld
+But, in order to get started, we need to know 
+\begin_inset Formula $\mu$
 \end_inset
 
-Since the code sizes vary over several orders of magnitude, the arithmetic
- mean and its confidence interval are not very useful.
- Do not make any conclusions from the results of this exercise.
- This data is reconsidered in Chapter 21.
-\begin_inset Quotes erd
+ .
+ In this case it is the mean of all response values in the table above.
+\begin_inset Formula \[
+\mu=\frac{\sum y_{i,j}}{n}=2.66\mbox{ (note: here \ensuremath{n=a\times b=11\times5=55})}\]
+
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
-The data mentioned is that the data in table 11.2, which is the same data
- we are asked to consider in exercise 21.3 in table 21.23, because we the
- exercise requires us to ignore the code sizes for the 68000 processor.
- Therefore the note applies, and we should not use an additive model to
- analyze this data, because that would require us to use aritmetic means
- of code sizes.
+We also need to know 
+\begin_inset Formula $\sum\alpha_{j}^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\sum\beta_{i}^{2}$
+\end_inset
+
+.
+ These are the sums from the table above of the squares of the row effects
+ and the column effects, respectively.
+ Here
+\begin_inset Formula \[
+\sum\alpha_{j}^{2}=4.33\mbox{ and}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\sum\beta_{j}^{2}=0.024\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now, we are ready to complete the ANOVA
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="7">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Component
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features>
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Sum of
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Squares
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features>
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Percentage of
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Variation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features>
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Degrees of
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Freedom
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features>
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Mean
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Square
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features>
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $F$
+\end_inset
+
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Computed
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features>
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $F$
+\end_inset
+
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Table
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\begin_inset Formula $SSY=\sum y_{i,j}^{2}=412.81$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $ab=55$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{y}_{..}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $SSO=ab\mu^{2}=55\times\left(2.66\right)^{2}=389.16$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y-\bar{y}_{..}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $SST=SSY-SSO=23.65$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $ab-1=54$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $SSA=b\sum\alpha_{j}^{2}=5\times4.33=21.67$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $100\frac{SSA}{SST}=100\frac{21.67}{23.65}=92.01$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a-1=4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $MSA=\frac{SSA}{a-1}=\frac{21.67}{4}=5.42$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{MSA}{MSE}=\frac{5.42}{0.043}=126.05$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $F_{\left[0.9,4,40\right]}=3.80$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $SSB=a\sum\beta_{j}^{2}=11\times0.024=0.27$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $100\frac{SSB}{SST}=100\frac{0.27}{23.65}=1.142$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b-1=10$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $MSB=\frac{SSB}{10}=\frac{0.27}{10}=2.70$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{MSB}{MSE}=\frac{2.70}{0.043}=62.80$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $F_{\left[0.9,10,40\right]}=2.13$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features>
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $SSE=$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $SST-\left(SSA+SSB\right)=23.65-\left(21.67-0.27\right)=1.72$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $100\frac{SSE}{SST}=100\frac{1.72}{23.65}=7.27$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features>
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\begin_inset Formula $\left(a-1\right)\left(b-1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+40
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $MSE=\frac{SSE}{\left(a-1\right)\left(b-1\right)}=\frac{1.72}{40}=0.043$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+a.
+ Percentage of Variation Explained by The Processor:
+\end_layout
+
+\begin_layout Standard
+From the ANOVA table above, we see that factor 
+\begin_inset Formula $B,$
+\end_inset
+
+ which represents the processor, explains 1.142 % of variation.
+\end_layout
+
+\begin_layout Subsection*
+b.
+ Percentage of Variation Explained by Workload:
+\end_layout
+
+\begin_layout Standard
+From the ANOVA table above, we see that factor 
+\begin_inset Formula $A,$
+\end_inset
+
+ which represents the workload, explains 92.01% of variation.
+\end_layout
+
+\begin_layout Subsection*
+c.
+ Signficant Difference Between Any Two Processors:
+\end_layout
+
+\begin_layout Standard
+From the ANOVA table above, we see that the 
+\begin_inset Formula $F$
+\end_inset
+
+-computed for factor 
+\begin_inset Formula $B$
+\end_inset
+
+ is 62.80 which is greater than the 
+\begin_inset Formula $F$
+\end_inset
+
+-table value for factor 
+\begin_inset Formula $B$
+\end_inset
+
+ at a 90% confidence level.
+ Therefore, there is a significant difference between some of the processors.
 \end_layout
 
 \end_body
