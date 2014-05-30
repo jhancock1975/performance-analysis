@@ -36,6 +36,7 @@
 \tracking_changes false
 \output_changes false
 \author "" 
+\author "" 
 \end_header
 
 \begin_body
@@ -239,6 +240,22 @@ Mean Squared,
 \begin_inset Quotes erd
 \end_inset
 
+ 
+\begin_inset Quotes eld
+\end_inset
+
+df
+\begin_inset Quotes erd
+\end_inset
+
+, stands for, 
+\begin_inset Quotes eld
+\end_inset
+
+degrees of freedom,
+\begin_inset Quotes erd
+\end_inset
+
  and that 1803.3 is the mean squared of the regression (
 \begin_inset Formula $MSR)$
 \end_inset
@@ -262,7 +279,171 @@ Mean Squared,
 \end_layout
 
 \begin_layout Standard
+In order to test whether a regression relation exists, we need the value
+ from the 
+\begin_inset Formula $F$
+\end_inset
 
+ distribution table for 
+\begin_inset Formula $\alpha=0.05$
+\end_inset
+
+ , 
+\begin_inset Formula $n=3$
+\end_inset
+
+, 
+\begin_inset Formula $m=20.$
+\end_inset
+
+ This is because the ANOVA table given shows 20 degrees of freedom for error
+ and 3 degrees of freedom for model.
+ which is 
+\begin_inset Formula $F_{\left[0.95;3,20\right]}=8.66$
+\end_inset
+
+ .
+ The computed 
+\begin_inset Formula $F$
+\end_inset
+
+-value is greater than the value from the 
+\begin_inset Formula $F$
+\end_inset
+
+ distribution table.
+ This means the regression explains a significant part of the variation
+ at the 0.05 significance level.
+ We can conclude that a regression relation exists.
+\end_layout
+
+\begin_layout Subsection*
+(b)
+\end_layout
+
+\begin_layout Standard
+The conclusion that a regression exists does not imply that the software
+ engineer need not screen the independent variables.
+ It is possible that we can do ANOVA, compute 
+\begin_inset Formula $MSR$
+\end_inset
+
+ and 
+\begin_inset Formula $MSE$
+\end_inset
+
+ that pass the 
+\begin_inset Formula $F$
+\end_inset
+
+-test, but confidence intervals for some model parameters 
+\begin_inset Formula $\beta_{i}$
+\end_inset
+
+ include 0.
+ 
+\end_layout
+
+\begin_layout Standard
+If the 
+\begin_inset Formula $F$
+\end_inset
+
+-test had shown that a regression relation had not existed, it would imply
+ that we cannot reject the hypothesis that all of the model parameters 
+\begin_inset Formula $\beta_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $\beta_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $\beta_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\beta_{3}$
+\end_inset
+
+ are 0.
+ This would imply that we would not need to screen for independent variables.
+ It would be a waste of time.
+\end_layout
+
+\begin_layout Section*
+3
+\end_layout
+
+\begin_layout Section*
+(a)
+\end_layout
+
+\begin_layout Standard
+The largest value for 
+\begin_inset Formula $SSR$
+\end_inset
+
+, 5409.89 in the given table is for 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ , 
+\begin_inset Formula $x_{3}$
+\end_inset
+
+ .
+ Therefore the 
+\begin_inset Formula $R^{2}$
+\end_inset
+
+value for the model with 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ , 
+\begin_inset Formula $x_{3}$
+\end_inset
+
+ as independent variables would be the largest out of all the models listed.
+ Therefore this model would be the best set for predicting 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection*
+(b)
+\end_layout
+
+\begin_layout Standard
+The observer misses the point that not screening means we might accidentally
+ select a model with a lower 
+\begin_inset Formula $R^{2}$
+\end_inset
+
+ than one of the models that we did not screen.
+ In this case, we would have selected a model where error explains more
+ varaition than the best model.
+ Therefore, we should screen.
+\end_layout
+
+\begin_layout Section*
+4
+\end_layout
+
+\begin_layout Subsection*
+(a)
 \end_layout
 
 \end_body
